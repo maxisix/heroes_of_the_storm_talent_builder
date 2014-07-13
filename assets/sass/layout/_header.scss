@@ -1,52 +1,31 @@
-.l-header__top, .l-header__bottom {
-	width: 100%
+.hero {
+	text-align: center;
+	display: inline-block;
 }
 
-
-.header__top, .header__bottom {
-	@include container(960px);
+.l-hero__thumbnail {
+	background: #000;
+	border-radius: 100%;
+	width: 66px;
+	height: 65px;
+	margin: 0 auto;
 }
 
-.logo {
-	@include span(3 at 1);
-}
+.hero__thumbnail {
+	border-radius: 100%;
+	opacity: 0.5;
+	transition-duration: 0.8s;
 
-.nav {
-	@include span(9 at 4);
-}
-
-
-.l-header__bottom {
-	background: #323031;
-	color: #fff;
-}
-
-
-.header__bottom {
-
-	.title {
-		@include span(6);
-		@include push(3);
-		font-size: 58px;
-		text-align: center;
+	&.active {
+		opacity: 1;
+		border: #0097ad;
 	}
 
-	> h2 {
-		@include span(6);
-		@include push(3);
-		text-align: center;
-	}
-}
-
-.header__infos {
-	@include span(9);
-
-	> h3 {
-		font-size: 14px;
+	&:hover {
+		border: 3px solid #0097ad;
+		opacity: 1;
+		transform: rotate(-360deg);
 	}
 
-	> p {
-		font-size: 12px
-	}
 
 }
