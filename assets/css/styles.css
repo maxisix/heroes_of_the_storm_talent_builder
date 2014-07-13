@@ -5956,6 +5956,17 @@ a {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  background: #000;
+  text-align: center;
+}
+
 .hero {
   text-align: center;
   display: inline-block;

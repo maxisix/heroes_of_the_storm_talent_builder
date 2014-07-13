@@ -1,12 +1,3 @@
-.l-main {
-	@include container(960px);
-}
-
-
-.main__aside {
-	@include span(4 at 1);
-}
-
-.main__articles {
-	@include span(8 at 5);
+.main {
+	
 }

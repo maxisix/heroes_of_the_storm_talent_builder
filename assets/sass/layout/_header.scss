@@ -1,31 +1,5 @@
-.hero {
-	text-align: center;
-	display: inline-block;
-}
-
-.l-hero__thumbnail {
+.header {
+	width: 100%;
 	background: #000;
-	border-radius: 100%;
-	width: 66px;
-	height: 65px;
-	margin: 0 auto;
-}
-
-.hero__thumbnail {
-	border-radius: 100%;
-	opacity: 0.5;
-	transition-duration: 0.8s;
-
-	&.active {
-		opacity: 1;
-		border: #0097ad;
-	}
-
-	&:hover {
-		border: 3px solid #0097ad;
-		opacity: 1;
-		transform: rotate(-360deg);
-	}
-
-
+	text-align: center;
 }

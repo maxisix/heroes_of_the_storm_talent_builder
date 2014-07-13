@@ -181,8 +181,8 @@ app.factory('HeroesFactory', function() {
 		getHeroes : function() {
 			return factory.heroes;
 		},
-		getHero : function(name) {
-			return factory.heroes[0];
+		getHeroTalents : function(name) {
+			return factory.heroes[0].talents;
 		}
 	}
 	return factory;
@@ -201,6 +201,6 @@ app.controller('HeroesCtrl', function($scope, HeroesFactory) {
 
 app.controller('TalentsCtrl', function($scope, HeroesFactory) {
 
-	$scope.talents = HeroesFactory.getHero().talents;
+	$scope.talents = HeroesFactory.getHeroTalents();
 
 });
