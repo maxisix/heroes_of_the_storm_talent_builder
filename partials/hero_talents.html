@@ -2,10 +2,12 @@
 
 		<h1>Heroes of the storm - Talents Calculator</h1>
 
-
-		<ul class="talents">
-			<li class="talents__element" ng-repeat="talent in talents">{{talent.lvl_1.skill_1.name}}</li>
-		</ul>
+		<div ng-repeat="(key, talent) in talents">
+			<h3>Level: {{key}}</h3>
+			<ul class="talents">
+				<li class="talents__element" ng-repeat="skill in talent">{{skill.name}}</li>
+			</ul>
+		</div>
 
 
 </div>
