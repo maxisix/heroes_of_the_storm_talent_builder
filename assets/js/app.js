@@ -21,32 +21,30 @@ app.factory('HeroesFactory', function() {
 				"name": "Abathur",
 				"thumbnail": "thumb-abathur.png",
 				"heroRotation": false,
-				"talents": [
-					{
-						"lvl_1": {
-							"skill_1": {
-								"name": "asd",
-								"description": "",
-								"thumbnail": ""
-							},
-							"skill_2": {
-								"name": "dsa",
-								"description": "",
-								"thumbnail": ""
-							},
-							"skill_3": {
-								"name": "fds",
-								"description": "",
-								"thumbnail": ""
-							},
-							"skill_4": {
-								"name": "fds",
-								"description": "",
-								"thumbnail": ""
-							}
+				"talents": {
+					"4": {
+						"talent_1": {
+							"name": "asd",
+							"description": "",
+							"thumbnail": ""
+						},
+						"talent_2": {
+							"name": "dsa",
+							"description": "",
+							"thumbnail": ""
+						},
+						"talent_3": {
+							"name": "fds",
+							"description": "",
+							"thumbnail": ""
+						},
+						"talent_4": {
+							"name": "fds",
+							"description": "",
+							"thumbnail": ""
 						}
 					}
-				]
+				}
 			},
 			{
 				"id": 2,
@@ -209,14 +207,12 @@ app.factory('HeroesFactory', function() {
 			return factory.heroes;
 		},
 		getHeroTalents : function( id ) {
-
 			var talents = {};
 			angular.forEach( factory.heroes, function( value, key ) {
 				if( value.id == id ) {
 					talents = value.talents;
 				}
 			} );
-			
 			return talents;
 		}
 	}
