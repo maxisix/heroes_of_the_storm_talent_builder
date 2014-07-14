@@ -5,7 +5,7 @@
 		<div class="heroes">
 
 			<figure class="hero" ng-repeat="hero in heroes | orderBy: '-heroRotation' ">
-				<a href="#/hero_talents/{{hero.name}}">
+				<a href="#/hero_talents/{{hero.id}}">
 					<div class="l-hero__thumbnail">
 						<img class="hero__thumbnail" ng-class="{active: hero.heroRotation}" src="assets/images/{{hero.thumbnail}}" alt="{{hero.name}}">
 					</div>
