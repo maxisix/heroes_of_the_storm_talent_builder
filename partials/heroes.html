@@ -7,7 +7,7 @@
 			<figure class="hero" ng-repeat="hero in heroes | orderBy: '-heroRotation' ">
 				<a href="#/hero_talents/{{hero.id}}">
 					<div class="l-hero__thumbnail">
-						<img class="hero__thumbnail" ng-class="{active: hero.heroRotation}" src="assets/images/{{hero.thumbnail}}" alt="{{hero.name}}">
+						<img class="hero__thumbnail" ng-class="{active: hero.heroRotation}" src="/assets/images/heroes-thumbnail/{{hero.thumbnail}}" alt="{{hero.name}}">
 					</div>
 					<figcaption>{{hero.name}}</figcaption>
 				</a>
@@ -15,15 +15,5 @@
 
 
 		</div>
-
-
-		<div class="talents">
-			<div class="talent">
-				<ul>
-					<li>1</li>
-				</ul>
-			</div>
-		</div>
-
 
 </div>

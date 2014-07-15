@@ -5967,6 +5967,10 @@ img {
   text-align: center;
 }
 
+.l-heroes {
+  margin-bottom: 65px;
+}
+
 .hero {
   text-align: center;
   display: inline-block;
@@ -5998,6 +6002,29 @@ img {
   -webkit-transform: rotate(-360deg);
   -ms-transform: rotate(-360deg);
   transform: rotate(-360deg);
+}
+
+.l-talents {
+  margin-bottom: 65px;
+}
+
+.talents {
+  display: inline-block;
+}
+
+.level {
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  height: 64px;
+  width: 64px;
+  line-height: 54px;
+}
+
+.main {
+  max-width: 1916px;
+  margin: 0 auto;
+  padding: 0 2%;
 }
 
 @media print {

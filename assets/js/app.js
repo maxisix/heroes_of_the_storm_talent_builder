@@ -22,26 +22,43 @@ app.factory('HeroesFactory', function() {
 				"thumbnail": "thumb-abathur.png",
 				"heroRotation": false,
 				"talents": {
-					"4": {
+					"1": {
 						"talent_1": {
-							"name": "asd",
-							"description": "",
-							"thumbnail": ""
+							"name": "Combat Adaptation",
+							"description": "Locusts gain 20% more Attack Speed.",
+							"thumbnail": "combat-adaptation.png"
 						},
 						"talent_2": {
-							"name": "dsa",
-							"description": "",
-							"thumbnail": ""
+							"name": "Survival Instincts",
+							"description": "Locusts gain 30% more Health.",
+							"thumbnail": "survival-instincts.png"
 						},
 						"talent_3": {
-							"name": "fds",
-							"description": "",
-							"thumbnail": ""
+							"name": "Envenomed Nest",
+							"description": "Toxic Nests deal 30% more damage over 3 seconds.",
+							"thumbnail": "envenomed-nest.png"
 						},
 						"talent_4": {
-							"name": "fds",
-							"description": "",
-							"thumbnail": ""
+							"name": "Bribe",
+							"description": "Kill enemy Minions to gain stacks of Bribe. Use 20 stacks to bribe target Mercenary, instantly defeating them. Does not work on Golems. Max 50 stacks.",
+							"thumbnail": "bribe.png"
+						}
+					},
+					"4": {
+						"talent_1": {
+							"name": "Pressurized Glands",
+							"description": "Increase the range of Symbiote's Spike Burst by 100%.",
+							"thumbnail": "pressurized-glands.png"
+						},
+						"talent_2": {
+							"name": "Ballistospores",
+							"description": "Toxic Nests can now be placed from unlimited range.",
+							"thumbnail": "ballistospores.png"
+						},
+						"talent_3": {
+							"name": "Promote",
+							"description": "Activate to give target allied lane Minion +200% permanent Health and +100% permanent damage. Has 2 charges.",
+							"thumbnail": "promote.png"
 						}
 					}
 				}
