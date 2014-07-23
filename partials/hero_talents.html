@@ -2,14 +2,54 @@
 
 		<h1>Heroes of the storm - Talents Calculator</h1>
 
-		<div ng-repeat="(key, talent) in talents">
-			<div class="level">{{key}}</div>
-			<div class="talents" ng-repeat="skill in talent">
-				<img class="talents__element" src="/../assets/images/talents/{{skill.thumbnail}}" />
-				<!-- <li class="talents__element" >{{skill.name}}</li>
-				<li class="talents__element" >{{skill.description}}</li> -->
-			</div>
-		</div>
+		<form action="">
 
+			<div ng-repeat="(key, talent) in talents">
+				<div class="level">{{key}}</div>
+
+					<fieldset>
+
+						<div class="talents" ng-repeat="skill in talent">
+							<label>
+								<input type="radio" name="{{skill.name}}" ng-value="{{$index}}" class="input-hidden" />
+								<img class="talents__element" alt="{{skill.name}}" src="/../assets/images/talents/{{skill.thumbnail}}" />
+							</label>
+						</div>
+						
+
+					</fieldset>
+
+					
+
+			</div>
+
+		</form>
+
+</div>
+
+
+<div>
+
+<input 
+  type="radio" name="emotion" 
+  id="sad" class="input-hidden" />
+<label for="sad">
+  <img 
+    src="//placekitten.com/150/150" 
+    alt="I'm sad" />
+</label>
+
+</div>
+
+<div>
+
+<input 
+  type="radio" name="emotion"
+  id="happy" class="input-hidden" />
+<label for="happy">
+  <img 
+    src="//placekitten.com/151/151" 
+    alt="I'm happy" />
+</label>
 
 </div>
